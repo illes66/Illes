@@ -1,0 +1,115 @@
+html,
+body {
+  margin: 0;
+  box-sizing: 1920 x 1080;
+  background-color: rgb(32, 31, 26);
+  font-family: sans-serif;
+  width: 100%;
+  height: 100%;
+}
+.container {
+  margin: 0;
+  padding: 0;
+  box-shadow: 0;
+  width: 100%;
+  height: 100%;
+}
+.sphere {
+  height: 250px;
+  width: 250px;
+  background-color: rgb(245, 118, 0);
+  border-radius: 50%;
+}
+.line {
+  width: 10000px;
+  height: 01px;
+  background-color: rgb(250, 124, 124);
+  position: relative;
+  top: 500px;
+}
+
+.leftLi {
+  height: 300px;
+  width: 300px;
+  margin-top: 2px;
+  margin-right: 4px;
+  padding: 2em;
+  list-style: none;
+  position: relative;
+  overflow: hidden;
+}
+ul {
+  height: 300px;
+  width: 300px;
+  margin-top: 2px;
+  margin-left: 4px;
+  padding: 2em;
+  list-style: none;
+  position: relative;
+  overflow: hidden;
+}
+ul::before {
+  height: 133%;
+  width: 133%;
+  position: relative;
+  top: -18%;
+  left: 10px;
+  content: "";
+}
+li {
+  margin: 28px 0;
+  color: rgb(245, 82, 32);
+  font-style: italic;
+  font-weight: bold;
+  overflow: hidden;
+}
+li::before {
+  height: 20px;
+  width: 20px;
+  content: "";
+  display: inline-block;
+  background-color: rgb(245, 82, 32);
+  border-radius: 50%;
+  position: relative;
+  top: 4px;
+  margin-right: 6px;
+}
+li.right {
+  margin-left: 0px;
+}
+li.middle {
+  margin-left: 16px;
+}
+
+li.rightRight {
+  margin-left: 26px;
+}
+li.middleRight {
+  margin-right: 40px;
+}
+li.middleMidlle {
+  margin-right: 60px;
+}
+li span {
+  position: relative;
+  left: -100%;
+  transition: left 200ms ease-in;
+}
+li:hover span {
+  left: 0;
+}
+
+li.rightRight:hover span {
+  right: 0;
+}
+li.middleRight:hover span {
+  right: 0;
+}
+li.middleMidlle:hover span {
+  right: 0;
+}
+#box {
+  height: 320px;
+  width: 300px;
+  position: relative;
+}

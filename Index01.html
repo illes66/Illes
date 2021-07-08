@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illes Web Site</title>
+    <link rel="stylesheet" href="style1.css">
+
+    <style>
+        body{margin: 0;}
+        line{
+            width: 10000px;
+  height: 01px;
+  background-color: rgb(250, 124, 124);
+  position: relative;
+  top: 500px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <script src="anime.min.js"></script>
+
+
+    <div id="container">
+    <p class="sphere"></p>
+    <p class="line"></p>
+
+    
+
+        <ul>
+            <li class="right"><span>Anecdotes</span></li>
+            <li class="middle"><span>Interviews</span></li>
+            <li><span>Records</span></li>
+            <li class="middle"><span>Recent Stats</span></li>
+            <li class="right"><span>Recent Snaps</span></li>
+
+        </ul>
+
+        <ul.leftLi>
+            <li class="rightRight"><span>Anecdotes</span></li>
+            <li class="middleRight"><span>Interviews</span></li>
+            <li class="middleMidlle"><span>Records</span></li>
+            <li class="middleRight"><span>Recent Stats</span></li>
+            <li class="rightRight"><span>Recent Snaps</span></li>
+        </ul.leftLi>
+
+    </div>
+
+
+</body>
+<script>
+    
+
+     anime({
+        targets: '.sphere',
+        translateY:100,
+        translateX:1000,
+        duration:300000,
+        loop: true,
+  translateX: 270,
+
+    });
+    anime();
+
+    anime({
+  targets: '.line',
+  translateY:10,
+        
+        scale: 1,
+        duration:3000,
+        loop: true,
+  delay: anime.stagger(100) // increase delay by 100ms for each elements.
+});
+
+    anime();
+  
+    /*const controls = new DragControls(objects, camera, renderer.domElement);
+    scene.add(controls);*/
+       var lines = [];
+       
+       var objectLIne = {
+           
+        //getComputedStyle(element).getPropertyValue("--line!");
+
+        //element.style.getPropertyValue("--line!");
+       }
+      // var lines;
+       //lines =  line;
+     
+        /*
+        
+         scene.add(object);
+
+            objects.push(object)
+        controls.addEventListener('dragStartCallback');
+        controls.addEventListener('dragend', dragendCallback);
+
+        function dragStartCallback(event){
+            startColor: event.object.material.color.getHex();
+            event.object.material.color.setHex(0x000000);
+        }
+
+        function dragendCallback(event){
+            event.object.material.color.setHex(startColor);
+
+        }
+
+        /*const controlsOr  = new THREE.OrbitControls(camera, renderer.domElement);
+        scene.add(controlsOr);*/
+
+
+
+</script>
+
+</html>
